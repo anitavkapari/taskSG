@@ -1,0 +1,37 @@
+go to folder 
+dir .. file name
+
+g clone<url>
+hg update
+hg pull,hg add,
+hg forget<node_modules,android\app\build>
+hg add
+hg commite
+username:-anitakumari
+set Path=%Pathe%;windir%\system32;<for notepad >
+hg config --edit
+hg commit<open natepad write user name and commit>
+hg push
+
+login->code->0->success->password pages
+status->-1->not found->registration page
+1.open android Emulator;
+2.react-native run-android； error??!! goto 3;
+3.adb install -r app/build/outputs/apk/app-debug.apk；
+
+Api fetch...??????
+Login<Done>
+1.select role
+2.searching 3.information<create user>
+4.add foundation
+5.addAdmin
+6.AddCpital
+7.allocate admin task and display
+8.conframation
+
+beyond compare4 download
+left project clone
+
+gradlew clean 
+
+https://github.com/rizwan-dev

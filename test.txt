@@ -1,0 +1,39 @@
+select
+        this_.id as id1_7_4_,
+        user2_.id as id1_28_0_,
+        user2_1_.aadharNo as aadharNo1_8_0_,
+        case 
+            when user2_1_.id is not null then 1 
+            when user2_.id is not null then 0 
+        end as clazz_0_,
+        user3_.id as id1_28_1_
+        ,user3_1_.aadharNo as aadharNo1_8_1_,
+        case 
+            when user3_1_.id is not null then 1 
+            when user3_.id is not null then 0 
+        end as clazz_1_
+        ,foundation4_.id as id1_7_2_
+        ,shortname5_.id as id1_17_3_
+    from
+        foundation this_ 
+    left outer join
+        user user2_ 
+            on this_.created_user_id=user2_.id 
+    left outer join
+        foundationAdmin user2_1_ 
+            on user2_.id=user2_1_.id 
+    left outer join
+        user user3_ 
+            on user2_.created_user_id=user3_.id 
+    left outer join
+        foundationAdmin user3_1_ 
+            on user3_.id=user3_1_.id 
+    left outer join
+        foundation foundation4_ 
+            on user2_1_.foundation_id=foundation4_.id 
+    left outer join
+        short_name shortname5_ 
+            on this_.prefix_id=shortname5_.id 
+    where
+        this_.foundationName= 'nFoundation Pvt ltd';
+
